@@ -14,6 +14,8 @@ export class TabelaComponent implements OnInit {
 
   constructor() {}
 
+  ngOnInit() {}
+
   getNumbers() {
     let arr = [];
     for (let i = 1; i <= this.n; i++) {
@@ -21,6 +23,4 @@ export class TabelaComponent implements OnInit {
     }
     return arr;
   }
-
-  ngOnInit() {}
 }

@@ -7,10 +7,11 @@
     <th>Numero</th>
     <th>Par ou impar</th>
   </tr>
-  <tr *ngFor="let n of getNumbers()"></tr>
-  <td>{{ n }}</td>
-  <td>
-    <span *ngIf="n % 2 == 0"> Par </span>
-    <span *ngIf="n % 2 != 0"> Impar </span>
-  </td>
+  <tr *ngFor="let n of getNumbers()">
+    <td>{{ n }}</td>
+    <td>
+      <span *ngIf="n % 2 == 0"> Par </span>
+      <span *ngIf="n % 2 != 0"> Impar </span>
+    </td>
+  </tr>
 </table>
