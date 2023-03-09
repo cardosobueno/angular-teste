@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { MEComponent } from './me/me.component';
 import { TimerComponent } from './timer/timer.component';
+import { TabelaComponent } from './tabela/tabela.component';
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule, MEComponent, TimerComponent],
+  imports: [CommonModule, MEComponent, TimerComponent, TabelaComponent],
   template: `
     <h1>Hello from {{name}}!</h1>
     <a target="_blank" href="https://angular.io/start">
@@ -16,7 +17,7 @@ import { TimerComponent } from './timer/timer.component';
     </a>
     <app-me> </app-me>
     <app-timer></app-timer>   
-  
+    <app-tabela></app-tabela>
   `,
 })
 export class App {
